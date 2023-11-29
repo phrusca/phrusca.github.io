@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Stiati ca... </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="C:\Users\Paul\OneDrive - Target Direct Inc\Desktop\School\PIUG\fontawesome-free-6.4.2-web\fontawesome-free-6.4.2-web\css\all.min.css">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <div class="container-fluid"></div>
+        <div class="container-fluid custom-background">
+                <tit>Grupul VAG</tit>
+                <h2>Hrusca Paul-Cosmin</h2>
+                <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+                </div>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      
+                      <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="Acasa.html">Acasa</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="masini.html">Masini</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="StiatiCa.html">Stiati ca...</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact us</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" onsubmit="searchRedirect(); return false;">
+                          <input id="searchInput" class="form-control me-2" type="text" placeholder="Search">
+                          <button class="btn btn-secondary" type="submit">Search</button>
+                      </form>
+                      
+                      </div>
+                    </div>
+                  </nav>
+              </div>
+
+
+              <div class="container-fluid" id="customBackground">
+                <h1>Stiati ca...</h1>
+                    <p>1. Volkswagen este a 7-a cea mai valoroasa companie din lume, valorand peste 75 000 000 000 $. </p>
+                    <p>2. Ideea jucariei pentru caini "Kong" provine de la o piesa a unei dubite Volkswagen. </p>
+                    <img src="74321_kongclassic_lifestyle_hs_03_8.jpg">
+                    <p>3. In 1948, compania Ford a avut ocazia sa ia Volkswagen gratuit, insa au refuzat.</p>
+                    <img src="ford.png">
+                    <p>4. Modelul Beetle a fost produs timp de 65 de ani.</p>
+                    <img src="65.png">
+                    <p>Alte curiozitati:</p>
+                    <p><img src="lmw.png"></p>
+                    <p><img src="bugatti.png"></p>
+                    <p><img src="ozi.png"></p>
+                    <h1> Clip Informativ: </h1>
+                    <script type='text/javascript' src='jwplayer.js'></script>
+
+<div id='mediaspace'></div>
+
+<script type='text/javascript'>
+  jwplayer('mediaspace').setup({
+    'flashplayer': 'player.swf',
+    'file':'video.mp4',
+    'controlbar': 'bottom',
+    'width': '470',
+    'height': '320'
+  });
+</script>
+              </div>
+<!--Toggle Background-->
+              
+              <script>
+                function toggleBackground() {
+                    var customBackground = document.getElementById('customBackground');
+                    customBackground.classList.toggle('dark-background');
+                }
+              </script>
+
+              <button id="scrollToTopBtn" class="btn btn-secondary">Mergi sus</button>
+              <button class="btn btn-secondary" onclick="toggleBackground()">Toggle Background</button>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Your additional scripts, if any -->
+
+  <!-- Custom JavaScript for Scroll to Top Button -->
+  <script>
+    // Get the button
+    var mybutton = document.getElementById("scrollToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", function() {
+      topFunction();
+    });
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  </script>
+
+  <!--Search script-->
+            <script>
+              function searchRedirect() {
+                  var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+                  if (searchQuery === 'volkswagen') {
+                      window.location.href = 'volkswagen.html';
+                  } 
+                  else if (searchQuery === 'acasa'){window.location.href = 'Acasa.html';}
+                  else {
+                      // Add additional conditions for other search queries and page redirects
+                      alert('No matching result found for ' + searchQuery);
+                  }
+              }
+          </script>
+        </body>
+ </html >

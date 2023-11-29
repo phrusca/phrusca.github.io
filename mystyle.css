@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+  }
+  p{
+
+color:rgb(50,99,71);
+
+  }
+  tit{
+
+    display: block;
+    font-size: 1.8em;
+    margin-top: 0.6em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  h1 {
+    color: grey;
+    text-align: left;
+  }
+  h2{
+    color: grey;
+    text-align: center;
+    font-size:15px;
+  }
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+  }
+  body.dark-mode {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff; /* Light text color */
+  }
+  .custom-background {
+    background-image: url('VW_Group_logo.jpg'); /* Replace 'your-image-path.jpg' with the path to your image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    color: #fff; /* Set text color to contrast with the background */
+    padding: 20px; /* Add padding to ensure content is visible */
+  }
+
+  
+    .thumbnail-item {
+      margin-right: 1px; /* Adjust the margin as needed */
+}
+.dark-background {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.social-icon {
+  margin: 0 10px; /* Adjust the spacing between icons as needed */
+}

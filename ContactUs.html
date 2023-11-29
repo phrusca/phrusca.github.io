@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>Contact Us </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="C:\Users\Paul\OneDrive - Target Direct Inc\Desktop\School\PIUG\fontawesome-free-6.4.2-web\fontawesome-free-6.4.2-web\css\all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container-fluid"></div>
+                <div class="container-fluid custom-background">
+                <tit>Grupul VAG</tit>
+                <h2>Hrusca Paul-Cosmin</h2>
+                <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+                </div>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      
+                      <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="Acasa.html">Acasa</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="masini.html">Masini</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="StiatiCa.html">Stiati ca...</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact us</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="text" placeholder="Search">
+                          <button class="btn btn-primary" type="button">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+              </div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="card-title text-center">Contact Us</h3>
+                        <form id="contactForm">
+                          <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nume" pattern="[A-Za-z]+" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Prenume" pattern="[A-Za-z]+" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="textArea">Additional Comments</label>
+                            <textarea class="form-control" id="textArea" rows="4" placeholder="Comentarii..."></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|ro|ca)" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid email address with .com, .ro, or .ca domain.
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-block">Trimiteti</button>
+                        </form>
+                        <div id="successMessage" class="mt-3 text-success" style="display: none;">Message sent successfully!</div>
+                        <div id="errorMessage" class="mt-3 text-danger" style="display: none;">Message sending failed. Please try again later.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+              <script>
+                $(document).ready(function () {
+                  $("#contactForm").submit(function (event) {
+                    event.preventDefault();
+              
+                    // Validare simplă a numelui și prenumelui (litere, nu cifre)
+                    var firstName = $("#firstName").val();
+                    var lastName = $("#lastName").val();
+                    if (!isValidName(firstName) || !isValidName(lastName)) {
+                      alert("Numele și prenumele trebuie să conțină doar litere și să nu conțină cifre.");
+                      return;
+                    }
+              
+                    // Validare a adresei de e-mail
+                    var email = $("#email").val();
+                    if (!isValidEmail(email)) {
+                      $("#email").addClass("is-invalid");
+                      return;
+                    }
+              
+                    // Dacă validarea trece, afișează mesajul de succes într-o fereastră pop-up
+                    alert("Mesaj trimis cu succes!");
+              
+                    // Resetarea formularului
+                    $("#contactForm")[0].reset();
+                    $("#email").removeClass("is-invalid");
+                  });
+              
+                  // Funcție pentru validarea numelui și prenumelui
+                  function isValidName(name) {
+                    var nameRegex = /^[A-Za-z]+$/;
+                    return nameRegex.test(name);
+                  }
+              
+                  // Funcție pentru validarea adresei de e-mail
+                  function isValidEmail(email) {
+                    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|ro|ca)$/;
+                    return emailRegex.test(email);
+                  }
+                });
+              </script>
+              <button id="scrollToTopBtn" class="btn btn-secondary">Mergi sus</button>
+
+
+
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Your additional scripts, if any -->
+
+  <!-- Custom JavaScript for Scroll to Top Button -->
+  <script>
+    // Get the button
+    var mybutton = document.getElementById("scrollToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", function() {
+      topFunction();
+    });
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  </script>
+            
+        </body>
+ </html >
