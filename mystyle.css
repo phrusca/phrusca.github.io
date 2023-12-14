@@ -64,3 +64,19 @@ color:rgb(50,99,71);
 .social-icon {
   margin: 0 10px; /* Adjust the spacing between icons as needed */
 }
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #dddddd; /* Adaugă un border general la tabel */
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
